@@ -11,22 +11,43 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="AreYouAGoodKisser" startnode="1" creator="Twine" creator-version="2.3.9" ifid="70767663-B2CF-4FB3-92F3-FC0C6698C2A8" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@font-face{
+<tw-storydata name="AreYouAGoodKisser" startnode="1" creator="Twine" creator-version="2.3.9" ifid="70767663-B2CF-4FB3-92F3-FC0C6698C2A8" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@font-face{
   font-family:Babe;
-  src:url("https://raw.githubusercontent.com/emzduck11/twineimages/master/ShortBaby-Mg2w.ttf");
+  
+  src:url("https://raw.githubusercontent.com/emzduck11/twineimages/master/Heykidos-X3rPP.otf");
 }
+  @font-face{
+  font-family:Chunk;
   
+  src:url("https://raw.githubusercontent.com/emzduck11/twineimages/master/ChunkFive-Regular.otf");
+}
 tw-story{
+  background-image:url("https://raw.githubusercontent.com/emzduck11/twineimages/master/kissy10.png");
   
+	background-size:cover;
   background-color: rgb(255,219,247)
-  
+ 	
 }
-tw-story{
+tw-story{ 
+  font-family: Babe 
+}
+tw-passage {
+	  text-align: CENTER
+		
+}
+
+tw-passage {
   font-family: Babe
+	  font-size: 15vh;  font-size: 15vw;font-size: 15vmin;line-height: normal;
+		color:rgb(26,28,27);
 }
+
+
 tw-link{
-  color:rgb(255,150,234);
-  font-family:Babe
+  
+  font-family: Chunk
+   font-size: 5vh;  font-size: 5vw;font-size: 5vmin;line-height: normal;
+  color:rgb(26,28,27);
 }
 tw-link:hover{
    color:rgb(255,255,255);
@@ -43,479 +64,413 @@ tw-link:hover{
   background-color: rgb(0,0,0);
   color: rgb(255,255,255);
 }
-.smooch1 {
-  position: absolute ;
-  left: 450px;
-  top: 0px;
- 
-  
-}
-.smooch2{ 
-  position: absolute;
-  left: 450px;
-  top: 100px;
-  
-}
-.smooch3{ 
-  position: absolute;
-  left: 450px;
-  top: 200px;
- 
-}
-  .smooch4{ 
-  position: absolute;
-  left: 450px;
-  top: 300px;
 
-}
-	.smooch5{ 
-  position: absolute;
-  left: 450px;
-  top: 400px;
- 
-}
-	  </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Home" tags="" position="66,27" size="100,100">Are You A Good Kisser?
+	  </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+//audio stuff
 
+let audio= document.createElement('audio');
+
+audio.src="https://raw.githubusercontent.com/emzduck11/twineimages/master/[ONTIVA.COM] Kiss - Sound Effect (SFX)-64k.mp3";
+
+window.optionSound = function() {
+	audio.play();
+}
+
+	window.popUpWindowCovid = function() {
+	window.open("https://raw.githubusercontent.com/emzduck11/twineimages/master/beercovid.jpg", "_blank", "toolbar=no,scrollbars=yes,resizable=no,auto-play=yes, top=500,left=500,width=1000,height=1000");
+};
+	window.popUpWindowMcdelivery = function() {
+	window.open("https://raw.githubusercontent.com/emzduck11/twineimages/master/mcdelivery.jpg", "_blank", "toolbar=no,scrollbars=no,resizable=no,top=100,left=100,width=800,height=800");
+};
+window.popUpWindowblistex = function() {
+	window.open("https://raw.githubusercontent.com/emzduck11/twineimages/master/blistex.jpg", "_blank", "toolbar=no,scrollbars=no,resizable=no,top=100,left=100,width=1000,height=1000");
+};
+
+
+
+	window.popUpWindowLipstick = function() {
+	window.open("https://raw.githubusercontent.com/emzduck11/twineimages/master/maybelline.gif", "_blank", "toolbar=no,scrollbars=yes,resizable=no,top=1000,left=300,width=1000,height=1000");
+};
+
+
+
+	window.popUpWindowDonald = function() {
+	window.open("https://raw.githubusercontent.com/emzduck11/twineimages/master/donald.gif", "_blank", "toolbar=no,scrollbars=yes,resizable=no,top=1000,left=10,width=100,height=100");
+};
+
+
+
+	window.popUpWindowVirus = function() {
+	window.open("https://raw.githubusercontent.com/emzduck11/twineimages/master/virus.gif", "_blank", "toolbar=no,scrollbars=yes,resizable=no,top=10,left=500,width=500,height=500");
+};
+
+window.popUpWindow = function() {
+	window.open("https://raw.githubusercontent.com/emzduck11/twineimages/master/beercovid.jpg", "_blank", "toolbar=no,scrollbars=yes,resizable=no,top=500,left=500,width=800,height=800");
+};
+
+window.popUpWindowVideo1 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video1.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,auto-play=yes,top=500,left=1000,width=900,height=3000");
+};
+
+
+
+window.popUpWindowVideo3 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video3.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,auto-play=yes,top=500,left=1000,width=600,height=340");
+};
+
+
+window.popUpWindowVideo4 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video4.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,auto-play=yes,top=1000,left=1000,width=500,height=350");
+};
+
+
+window.popUpWindowVideo5 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video5.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,auto-play=yes,top=500,left=1000,width=600,height=340");
+};
+
+
+window.popUpWindowVideo6 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video6.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+
+
+window.popUpWindowVideo7 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video7.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+
+window.popUpWindowVideo8 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video8.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+
+window.popUpWindowVideo9 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video9.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+
+
+window.popUpWindowVideo10 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video10.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+
+
+window.popUpWindowVideo11 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video11.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+
+window.popUpWindowVideo12 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video12.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+
+
+
+window.popUpWindowVideo13 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video13.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+window.popUpWindowVideo14 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video14.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+window.popUpWindowVideo15 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video15.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+window.popUpWindowVideo16 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video16.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+
+window.popUpWindowVideo17 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video17.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+window.popUpWindowVideo171 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video171.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+
+window.popUpWindowVideo161 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video161.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+
+window.popUpWindowVideo151 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video151.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+window.popUpWindowVideo18 = function() {
+	window.open("https://emzduck11.github.io/twineimages/video18.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=1000,width=600,height=340");
+};
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Home" tags="" position="69,29" size="100,100">Are You A Good Kisser?
+&lt;span onclick=&#39;optionSound();&#39;&gt;
 [[Begin Game]]
-
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;</tw-passagedata><tw-passagedata pid="2" name="Begin Game" tags="" position="132,160" size="100,100">When did you have your first kiss?
+&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="2" name="Begin Game" tags="" position="133,162" size="100,100">When did you have your first kiss?
+&lt;span onclick=&#39;popUpWindowVideo4(); optionSound();&#39;&gt;
 [[Younger than 13]]
+&lt;/span&gt;
+&lt;span onclick=&#39;popUpWindowCovid(); optionSound();&#39;&gt;
 [[13-18]]
+&lt;/span&gt;
+&lt;span onclick=&#39;popUpWindowVideo3(); optionSound();&#39;&gt;
 [[18 and older]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="3" name="Younger than 13" tags="" position="131,333" size="100,100">Did you kiss them or did they kiss you?
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="3" name="Younger than 13" tags="" position="131,333" size="100,100">Did you kiss them or did they kiss you?
+&lt;span onclick=&#39;popUpWindowVideo5(); optionSound();&#39;&gt;
 [[I kissed them]]
 [[They kissed me]]
 [[It was mutual]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
 [[Home]]
-</tw-passagedata><tw-passagedata pid="4" name="13-18" tags="" position="287,168" size="100,100">Did you kiss them or did they kiss you?
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="4" name="13-18" tags="" position="283,137" size="100,100">Did you kiss them or did they kiss you?
+&lt;span onclick=&#39;popUpWindowVideo4(); optionSound();&#39;&gt;
 [[I kissed them]]
 [[They kissed me]]
 [[It was mutual]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="5" name="18 and older" tags="" position="242,20" size="100,100">Did you kiss them or did they kiss you?
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="5" name="18 and older" tags="" position="240,13" size="100,100">Did you kiss them or did they kiss you?
+&lt;span onclick=&#39;popUpWindowVideo6(); optionSound();&#39;&gt;
 [[I kissed them]]
 [[They kissed me]]
 [[It was mutual]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="6" name="I kissed them" tags="" position="512,103" size="100,100">Describe yourself in one word.
+&lt;span onclick=&#39;popUpWindowVideo9(); optionSound();&#39;&gt;
+[[Confident]]
+[[Shy]]
+&lt;/span&gt;
+&lt;span onclick=&#39;popUpWindowVirus()&#39;&gt;
+[[Sassy]]
+&lt;span/&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Caring]]
+[[Quirky]]
 
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="6" name="I kissed them" tags="" position="511.3333333333333,103" size="100,100">Describe yourself in one word.
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="7" name="They kissed me" tags="" position="425,0" size="100,100">Describe yourself in one word.
+&lt;span onclick=&#39;popUpWindowLipstick()&#39;&gt;
+[[Confident]]
+&lt;span/&gt;
+&lt;span onclick=&#39;popUpWindowVideo5(); optionSound();&#39;&gt;
+[[Shy]]
+&lt;/span&gt;
+&lt;span onclick=&#39;popUpWindowVideo10(); optionSound();&#39;&gt;
+[[Sassy]]
+&lt;/span&gt;
+&lt;span onclick=&#39;popUpWindowVideo4(); optionSound();&#39;&gt;
+[[Caring]]
+&lt;/span&gt;
+&lt;span onclick=&#39;popUpWindowVideo7(); optionSound();&#39;&gt;
+[[Quirky]]
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="8" name="It was mutual" tags="" position="455,210" size="100,100">Describe yourself in one word.
+&lt;span onclick= &#39;popUpWindowVideo8()&#39;&gt;
 [[Confident]]
 [[Shy]]
 [[Sassy]]
 [[Caring]]
+&lt;/span&gt;
+&lt;span onclick=&#39;popUpWindowDonald()&#39;&gt;
 [[Quirky]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="7" name="They kissed me" tags="" position="425,0" size="100,100">Describe yourself in one word.
-[[Confident]]
-[[Shy]]
-[[Sassy]]
-[[Caring]]
-[[Quirky]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="8" name="It was mutual" tags="" position="455,210" size="100,100">Describe yourself in one word.
-[[Confident]]
-[[Shy]]
-[[Sassy]]
-[[Caring]]
-[[Quirky]]
-
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="9" name="Confident" tags="" position="710,0" size="100,100">Have you kissed a lot of people?
+&lt;span/&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="9" name="Confident" tags="" position="710,0" size="100,100">Have you kissed a lot of people?
+&lt;span onclick=&#39;popUpWindowblistex()&#39;&gt;
+[[Yes and I have no shame about it]]
+&lt;span/&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[ A fair amount]]
+[[No lol]]
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="10" name="Shy" tags="" position="967,0" size="100,100">Have you kissed a lot of people?
+&lt;span onclick=&#39;popUpWindowVideo151(); optionSound();&#39;&gt;
+[[Yes and I have no shame about it]]
+[[ A fair amount]]
+&lt;/span&gt;
+&lt;span onclick=&#39;popUpWindowMcdelivery()&#39;&gt;
+[[No lol]]
+&lt;span/&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="11" name="Sassy" tags="" position="726,152" size="100,100">Have you kissed a lot of people?
+&lt;span onclick=&#39;optionSound();&#39;&gt;
 [[Yes and I have no shame about it]]
 [[ A fair amount]]
 [[No lol]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
 
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="10" name="Shy" tags="" position="967,0" size="100,100">Have you kissed a lot of people?
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="12" name="Caring" tags="" position="830,120" size="100,100">Have you kissed a lot of people?
+&lt;span onclick=&#39;popUpWindowVideo15(); optionSound();&#39;&gt;
 [[Yes and I have no shame about it]]
 [[ A fair amount]]
 [[No lol]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="11" name="Sassy" tags="" position="726,152" size="100,100">Have you kissed a lot of people?
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="13" name="Quirky" tags="" position="830,1" size="100,100">Have you kissed a lot of people?
+&lt;span onclick=&#39;popUpWindowVideo14(); optionSound();&#39;&gt;
 [[Yes and I have no shame about it]]
 [[ A fair amount]]
 [[No lol]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="12" name="Caring" tags="" position="830,120" size="100,100">Have you kissed a lot of people?
-[[Yes and I have no shame about it]]
-[[ A fair amount]]
-[[No lol]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="13" name="Quirky" tags="" position="830,1.6666666666666667" size="100,100">Have you kissed a lot of people?
-[[Yes and I have no shame about it]]
-[[ A fair amount]]
-[[No lol]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="14" name="Yes and I have no shame about it" tags="" position="1122,40" size="100,100">Are you in a relationship?
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="14" name="Yes and I have no shame about it" tags="" position="1121,40" size="100,100">Are you in a relationship?
+&lt;span onclick=&#39;popUpWindowVideo151(); optionSound();&#39;&gt;
 [[Yes]]
 [[No]]
 [[It&#39;s Complicated]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="15" name=" A fair amount" tags="" position="1133,161" size="100,100">Are you in a relationship?
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="15" name=" A fair amount" tags="" position="1133,162" size="100,100">Are you in a relationship?
+&lt;span onclick=&#39;popUpWindowVideo13(); optionSound();&#39;&gt;
 [[Yes]]
 [[No]]
 [[It&#39;s Complicated]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="16" name="No lol" tags="" position="950,150" size="100,100">Are you in a relationship?
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="16" name="No lol" tags="" position="957,195" size="100,100">Are you in a relationship?
+&lt;span onclick=&#39;optionSound();&#39;&gt;
 [[Yes]]
 [[No]]
 [[It&#39;s Complicated]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
 
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="17" name="Yes" tags="" position="1275,8" size="100,100">Be honest, Have you ever watched a video on how to be a good kisser?
+&lt;span onclick=&#39;popUpWindowVideo12(); optionSound();&#39;&gt;
+[[Yea who hasn&#39;t??]]
+&lt;/span&gt;
+[[ Ewww.No way.]]
 
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="17" name="Yes" tags="" position="1275,8" size="100,100">Be honest, Have you ever watched a video on how to be a good kisser?
+[[Home]]</tw-passagedata><tw-passagedata pid="18" name="No" tags="" position="1424,1" size="100,100">Be honest, Have you ever watched a video on how to be a good kisser?
+&lt;span onclick=&#39;popUpWindowVideo11(); optionSound();&#39;&gt;
 [[Yea who hasn&#39;t??]]
 [[ Ewww.No way.]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;</tw-passagedata><tw-passagedata pid="18" name="No" tags="" position="1425,0" size="100,100">Be honest, Have you ever watched a video on how to be a good kisser?
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="19" name="It&#39;s Complicated" tags="" position="1294,139" size="100,100">Be honest, Have you ever watched a video on how to be a good kisser?
 [[Yea who hasn&#39;t??]]
+&lt;span onclick=&#39;popUpWindowVideo1(); optionSound();&#39;&gt;
 [[ Ewww.No way.]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="19" name="It&#39;s Complicated" tags="" position="1293,138" size="100,100">Be honest, Have you ever watched a video on how to be a good kisser?
-[[Yea who hasn&#39;t??]]
-[[ Ewww.No way.]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="20" name="Yea who hasn&#39;t??" tags="" position="1575,113" size="100,100">How do you feel about PDA?
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="20" name="Yea who hasn&#39;t??" tags="" position="1602,86" size="100,100">How do you feel about PDA?
+&lt;span onclick=&#39;optionSound();&#39;&gt;
 [[I think its gross.People need to get a room!]]
 [[Who cares what people think!]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
 
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="21" name=" Ewww.No way." tags="" position="1442,154" size="100,100">How do you feel about PDA?
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="21" name=" Ewww.No way." tags="" position="1430,124" size="100,100">How do you feel about PDA?
+&lt;span onclick=&#39;popUpWindowVideo16(); optionSound();&#39;&gt;
 [[I think its gross.People need to get a room!]]
+
 [[Who cares what people think!]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
 [[Home]]
-</tw-passagedata><tw-passagedata pid="22" name="I think its gross.People need to get a room!" tags="" position="1408,274.6666666666667" size="100,100">Would you rather have a few smooches of a full of makeout sesh?
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="22" name="I think its gross.People need to get a room!" tags="" position="1409,274" size="100,100">Would you rather have a few smooches of a full of makeout sesh?
+&lt;span onclick=&#39;popUpWindowVideo161(); optionSound();&#39;&gt;
 [[Smooches.Cute! ]]
 [[Makeout obviously!]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="23" name="Who cares what people think!" tags="" position="1550,208" size="100,100">Would you rather have a few smooches of a full of makeout sesh?
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="23" name="Who cares what people think!" tags="" position="1550,208" size="100,100">Would you rather have a few smooches of a full of makeout sesh?
+&lt;span onclick=&#39;popUpWindowVideo17(); optionSound();&#39;&gt;
 [[Smooches.Cute! ]]
 [[Makeout obviously!]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="24" name="Smooches.Cute! " tags="" position="1393,448" size="100,100">When was the last time you kissed someone?
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="24" name="Smooches.Cute! " tags="" position="1334,394" size="100,100">When was the last time you kissed someone?
+&lt;span onclick=&#39;optionSound();&#39;&gt;
 [[Less that 24 hours ago]]
 [[Within the last week]]
 [[Over a week ago]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
 
 
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="25" name="Makeout obviously!" tags="" position="1543,448" size="100,100">When was the last time you kissed someone?
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="25" name="Makeout obviously!" tags="" position="1595,449" size="100,100">When was the last time you kissed someone?
+&lt;span onclick=&#39;popUpWindowVideo171(); optionSound();&#39;&gt;
 [[Less that 24 hours ago]]
 [[Within the last week]]
 [[Over a week ago]]
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="26" name="Less that 24 hours ago" tags="" position="1085,558" size="100,100">Would you say you are close to the person you last kissed?
+&lt;span onclick=&#39;popUpWindowVideo18(); optionSound();&#39;&gt;
+[[It was a good friend]]
+[[Kinda, we have seen each other a few times]]
+[[No, it was the first time meeting them.]] 
+&lt;/span&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]]
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="27" name="Within the last week" tags="" position="1357,685" size="100,100">&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[next question-&gt;Less that 24 hours ago]]
 
 
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="26" name="Less that 24 hours ago" tags="" position="1198,604" size="100,100">&lt;b&gt;You are among the most elite group of people who are EXPERTS at kissing. Count yourself blessed and take advantage of you rare talent! Happy Smooching!&lt;/b&gt;
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
 
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]]</tw-passagedata><tw-passagedata pid="27" name="Within the last week" tags="" position="1393,598" size="100,100">&lt;b&gt;You are just an AVERAGE kisser. Like most people kissing is something that comes naturally but not everyone can be the best. Maybe watching some more videos on how to kiss will up your game!&lt;/b&gt;
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="28" name="Over a week ago" tags="" position="1577,650" size="100,100">&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[next question-&gt;Less that 24 hours ago]]
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/qdKTNGFPhbg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata><tw-passagedata pid="28" name="Over a week ago" tags="" position="1543,598" size="100,100">&lt;b&gt;You have a long way to perfecting your kissing game. Maybe stick to the classic smooch for a while and loosen up. To be a good kisser you need some practice so get your game on and don&#39;t forget to brush your teeth!&lt;/b&gt;
-&lt;img 
-class=&quot;smooch1&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch1.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch2&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch2.png&quot; width=&quot;50&quot; height=&quot;50&quot;&gt;
-&lt;img 
-class=&quot;smooch3&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch3.png&quot; width=&quot;70&quot; height=&quot;60&quot;&gt;
-
-
-&lt;img 
-class=&quot;smooch4&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch4.png&quot; width=&quot;80&quot; height=&quot;80&quot;&gt;
-&lt;img 
-class=&quot;smooch5&quot; src=&quot;https://raw.githubusercontent.com/emzduck11/twineimages/master/smooch5.png&quot; width=&quot;70&quot; height=&quot;70&quot;&gt;
-[[Home]] </tw-passagedata></tw-storydata>
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="29" name="Results" tags="" position="958,911" size="100,100">&lt;b&gt;You are among the most elite group of people who are EXPERTS at kissing. Count yourself blessed and take advantage of you rare talent! Happy Smooching!&lt;/b&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]]
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="30" name="Results." tags="" position="584,878" size="100,100">&lt;b&gt;You are just an AVERAGE kisser. Like most people kissing is something that comes naturally but not everyone can be the best. Maybe watching some more videos on how to kiss will up your game!&lt;/b&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]]
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="31" name="Results.." tags="" position="753,911" size="100,100">&lt;b&gt;You have a long way to perfecting your kissing game. Maybe stick to the classic smooch for a while and loosen up. To be a good kisser you need some practice so get your game on and don&#39;t forget to brush your teeth!&lt;/b&gt;
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Home]]
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="32" name="It was a good friend" tags="" position="816,601" size="100,100">Are you planning on ruining your friendship? 
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Yes I am]]
+[[No I am not]] 
+[[We&#39;ll see how it goes]]
+[[Home]]
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="33" name="Kinda, we have seen each other a few times" tags="" position="893,464" size="100,100">Do you normally make out with this person? 
+&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Yea]]
+[[Not really]]
+[[ on the odd occation]]
+[[Home]]
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="34" name="No, it was the first time meeting them." tags="" position="1126,757" size="100,100">&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Results]] 
+[[Home]]
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="35" name="We&#39;ll see how it goes" tags="" position="634,648" size="100,100">&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Results.]] 
+[[Home]]
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="36" name="No I am not" tags="" position="744,739" size="100,100">&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Results..]] 
+[[Home]]
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="37" name="Yea" tags="" position="659,488" size="100,100">&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Results.]] 
+[[Home]]
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="38" name="Not really" tags="" position="797,327" size="100,100">&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Results]] 
+[[Home]] 
+&lt;/span&gt;</tw-passagedata><tw-passagedata pid="39" name=" on the odd occation" tags="" position="655,352" size="100,100"> &lt;span onclick=&#39;optionSound();&#39;&gt;
+ [[Results..]] 
+ [[Home]] 
+ &lt;/span&gt;</tw-passagedata><tw-passagedata pid="40" name="Yes I am" tags="" position="877,749" size="100,100">&lt;span onclick=&#39;optionSound();&#39;&gt;
+[[Results]] 
+[[Home]]
+&lt;/span&gt;</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
